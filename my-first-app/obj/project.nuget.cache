@@ -1,11 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "Ec7QSC9qR8I=",
+  "dgSpecHash": "G7sjzMqSmJI=",
   "success": true,
   "projectFilePath": "/Users/sskiizens/Documents/DevSecOps_Course/my-first-app/my-first-app.csproj",
   "expectedPackageFiles": [
     "/Users/sskiizens/.nuget/packages/microsoft.aspnetcore.openapi/9.0.0/microsoft.aspnetcore.openapi.9.0.0.nupkg.sha512",
-    "/Users/sskiizens/.nuget/packages/microsoft.openapi/1.6.17/microsoft.openapi.1.6.17.nupkg.sha512"
+    "/Users/sskiizens/.nuget/packages/microsoft.openapi/1.6.22/microsoft.openapi.1.6.22.nupkg.sha512",
+    "/Users/sskiizens/.nuget/packages/swashbuckle.aspnetcore.swagger/7.2.0/swashbuckle.aspnetcore.swagger.7.2.0.nupkg.sha512",
+    "/Users/sskiizens/.nuget/packages/swashbuckle.aspnetcore.swaggergen/7.2.0/swashbuckle.aspnetcore.swaggergen.7.2.0.nupkg.sha512",
+    "/Users/sskiizens/.nuget/packages/swashbuckle.aspnetcore.swaggerui/7.2.0/swashbuckle.aspnetcore.swaggerui.7.2.0.nupkg.sha512"
   ],
   "logs": []
 }

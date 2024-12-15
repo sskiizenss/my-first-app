@@ -31,3 +31,7 @@
 /Users/sskiizens/Documents/DevSecOps_Course/my-first-app/obj/Debug/net9.0/my-first-app.pdb
 /Users/sskiizens/Documents/DevSecOps_Course/my-first-app/obj/Debug/net9.0/my-first-app.genruntimeconfig.cache
 /Users/sskiizens/Documents/DevSecOps_Course/my-first-app/obj/Debug/net9.0/ref/my-first-app.dll
+/Users/sskiizens/Documents/DevSecOps_Course/my-first-app/bin/Debug/net9.0/Swashbuckle.AspNetCore.Swagger.dll
+/Users/sskiizens/Documents/DevSecOps_Course/my-first-app/bin/Debug/net9.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Users/sskiizens/Documents/DevSecOps_Course/my-first-app/bin/Debug/net9.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/Users/sskiizens/Documents/DevSecOps_Course/my-first-app/obj/Debug/net9.0/my-first-app.sourcelink.json
