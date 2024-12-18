@@ -20,12 +20,12 @@ jobs:
         run: dotnet restore ./my-first-app/my-first-app.csproj #Réaliser une restauration de dépendance
       - name: Build Project
         run: dotnet build ./my-first-app/my-first-app.csproj --no-restore #Réaliser un build de la solution
-  tests ubuntu: #Job de test ubuntu
+  tests_ubuntu: #Job de test ubuntu
     runs-on: ubuntu-latest
     steps:
       - name: Run Tests #Réalisation des tests unitaires
         run: dotnet test ./my-first-app.Tests/my-first-app.Tests.csproj --verbosity normal
-  test windows: #job de test windows
+  test_windows: #job de test windows
     runs-on: windows-latest #Utilisation d'un agent windows
     steps:
       - name: Run Tests #Réalisation des tests unitaires
