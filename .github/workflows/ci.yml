@@ -23,10 +23,22 @@ jobs:
   tests_ubuntu: #Job de test ubuntu
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4 #Checkout pour récupérer le code
+      - name: ⚙️ Setup .NET 9 SDK
+        uses: actions/setup-dotnet@v4 #Réaliser le setup de dotnet sur l'agent
+        with:
+          dotnet-version: 9.0.101
       - name: Run Tests #Réalisation des tests unitaires
         run: dotnet test ./my-first-app.Tests/my-first-app.Tests.csproj --verbosity normal
   test_windows: #job de test windows
     runs-on: windows-latest #Utilisation d'un agent windows
     steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4 #Checkout pour récupérer le code
+      - name: ⚙️ Setup .NET 9 SDK
+        uses: actions/setup-dotnet@v4 #Réaliser le setup de dotnet sur l'agent
+        with:
+          dotnet-version: 9.0.101
       - name: Run Tests #Réalisation des tests unitaires
         run: dotnet test ./my-first-app.Tests/my-first-app.Tests.csproj --verbosity normal
