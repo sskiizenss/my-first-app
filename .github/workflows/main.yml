@@ -1,0 +1,24 @@
+name: Continuous Integration
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - *
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🛠️ Checkout Repository
+        uses: actions/checkout@v4
+      - name: ⚙️ Setup .NET 9 SDK
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 9.0.101
+      - name: 📦 Restore Dependencies
+        run: dotnet restore ./my-first-app/my-first-app.csproj
+      - name: 🏗️ Build Project
+        run: dotnet build ./my-first-app/my-first-app.csproj --no-restore
+      - name: ✅ Run Tests
+        run: dotnet test ./my-first-app.Tests/my-first-app.Tests.csproj --no-build --verbosity normal
