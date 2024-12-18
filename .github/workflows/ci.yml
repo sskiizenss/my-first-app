@@ -1,24 +1,30 @@
-name: Continuous Integration
+name: Continuous Integration #Nom du workflow
 
-on:
+on: #Condition d'execution
   workflow_dispatch:
-  push:
+  push: #à chaque push
     branches:
-      - '**'
+      - '**' #sur l'ensemble des branches
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
+  build: #job de build
+    runs-on: ubuntu-latest #L'agent utilisé est un Ubuntu
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v4 #Checkout pour récupérer le code
       - name: ⚙️ Setup .NET 9 SDK
-        uses: actions/setup-dotnet@v4
+        uses: actions/setup-dotnet@v4 #Réaliser le setup de dotnet sur l'agent
         with:
           dotnet-version: 9.0.101
       - name: Restore Dependencies
-        run: dotnet restore ./my-first-app/my-first-app.csproj
+        run: dotnet restore ./my-first-app/my-first-app.csproj #Réaliser une restauration de dépendance
       - name: Build Project
-        run: dotnet build ./my-first-app/my-first-app.csproj --no-restore
-      - name: Run Tests
+        run: dotnet build ./my-first-app/my-first-app.csproj --no-restore #Réaliser un build de la solution
+  tests ubuntu: #Job de test ubuntu
+    runs-on: ubuntu-latest
+      - name: Run Tests #Réalisation des tests unitaires
+        run: dotnet test ./my-first-app.Tests/my-first-app.Tests.csproj --verbosity normal
+  test windows: #job de test windows
+    runs-on: windows-latest #Utilisation d'un agent windows
+      - name: Run Tests #Réalisation des tests unitaires
         run: dotnet test ./my-first-app.Tests/my-first-app.Tests.csproj --verbosity normal
