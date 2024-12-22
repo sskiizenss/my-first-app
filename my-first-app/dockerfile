@@ -11,7 +11,7 @@ COPY . .
 # Publication de l'app dotnet
 RUN dotnet publish -c Release -o /app
 
-FROM ubuntu:24.10 AS prod
+FROM ubuntu:24.10
 
 # Récupération des DLL de l'application
 WORKDIR /app
