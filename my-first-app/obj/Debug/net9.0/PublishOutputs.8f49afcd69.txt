@@ -1,0 +1,12 @@
+/Users/sskiizens/Documents/DevSecOps_Course/my-first-app/publish/my-first-app
+/Users/sskiizens/Documents/DevSecOps_Course/my-first-app/publish/appsettings.Development.json
+/Users/sskiizens/Documents/DevSecOps_Course/my-first-app/publish/appsettings.json
+/Users/sskiizens/Documents/DevSecOps_Course/my-first-app/publish/my-first-app.dll
+/Users/sskiizens/Documents/DevSecOps_Course/my-first-app/publish/my-first-app.deps.json
+/Users/sskiizens/Documents/DevSecOps_Course/my-first-app/publish/my-first-app.runtimeconfig.json
+/Users/sskiizens/Documents/DevSecOps_Course/my-first-app/publish/my-first-app.pdb
+/Users/sskiizens/Documents/DevSecOps_Course/my-first-app/publish/Microsoft.AspNetCore.OpenApi.dll
+/Users/sskiizens/Documents/DevSecOps_Course/my-first-app/publish/Microsoft.OpenApi.dll
+/Users/sskiizens/Documents/DevSecOps_Course/my-first-app/publish/Swashbuckle.AspNetCore.Swagger.dll
+/Users/sskiizens/Documents/DevSecOps_Course/my-first-app/publish/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Users/sskiizens/Documents/DevSecOps_Course/my-first-app/publish/Swashbuckle.AspNetCore.SwaggerUI.dll
